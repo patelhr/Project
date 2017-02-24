@@ -25,7 +25,7 @@ script:
     - ./gradlew clean build connectedCheck -PdisablePreDex --stacktrace
 deploy:
   provider: releases
-  file: Project.apk
+  file: "./app/build/outputs/apk/app-release-unsigned.apk"
   skip_cleanup: true
 
   on:
